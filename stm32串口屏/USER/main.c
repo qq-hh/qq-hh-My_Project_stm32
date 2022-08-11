@@ -37,12 +37,12 @@ int main(void)
 		if(key1){
 	switch(key1){
 	case WKUP_PRES:	//控制蜂鸣器
-				UartSend("JUMP(1);\r\n");
+				UartSend("JUMP(1);\r\n");//翻页
 		    CheckBusy();
 	    	delay_ms(100);
 					break; 
 		case  KEY1_PRES:
-    UartSend("SET_BTN(3,1);SET_POINT(2,90);SET_PROG(1,50);\r\n");
+    UartSend("SET_BTN(3,1);SET_POINT(2,90);SET_PROG(1,50);\r\n");//控制按键、指针、进度条
 		CheckBusy();
 		LED1=!LED1;
 		delay_ms(10); 
