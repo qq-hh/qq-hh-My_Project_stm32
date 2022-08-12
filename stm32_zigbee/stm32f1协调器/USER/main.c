@@ -41,7 +41,7 @@ if(USART2_RX_STA&0x8000)
 			USART1_RX_STA=0;
 			USART2_RX_STA=0;
 		}		
-// 	Button_Test();
+	//Button_Test();
 	
 }
 
