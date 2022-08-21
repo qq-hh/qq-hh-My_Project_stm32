@@ -1,0 +1,11 @@
+..\obj\cjson_utils.o: ..\HARDWARE\cjson\cJSON_Utils.c
+..\obj\cjson_utils.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\ctype.h
+..\obj\cjson_utils.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+..\obj\cjson_utils.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+..\obj\cjson_utils.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+..\obj\cjson_utils.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\limits.h
+..\obj\cjson_utils.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
+..\obj\cjson_utils.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\float.h
+..\obj\cjson_utils.o: ..\HARDWARE\cjson\cJSON_Utils.h
+..\obj\cjson_utils.o: ..\HARDWARE\cjson\cJSON.h
+..\obj\cjson_utils.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h

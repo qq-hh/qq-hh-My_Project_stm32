@@ -1,0 +1,61 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.20.0.0
+Copyright (C) 2016 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: H 1, 1, LIC=7YKSB-266SE-GP8ZR-KQCFC-ZPP1C-FLZJ5
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Professional  Version: 5.20
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 2 (build 183)
+Assembler:       Armasm.exe V5.06 update 2 (build 183)
+Linker/Locator:  ArmLink.exe V5.06 update 2 (build 183)
+Library Manager: ArmAr.exe V5.06 update 2 (build 183)
+Hex Converter:   FromElf.exe V5.06 update 2 (build 183)
+CPU DLL:         SARMCM3.DLL V5.20
+Dialog DLL:      DARMSTM.DLL V1.66.0.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V2.0.18.0
+Dialog DLL:      TARMSTM.DLL V1.65.0.0
+ 
+<h2>Project:</h2>
+C:\Users\GD005\Desktop\demoÄ£°å\USER\LED.uvprojx
+Project File Date:  08/10/2022
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 2 (build 183)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Build target 'demo'
+compiling main.c...
+main.c(24): warning:  #223-D: function "SPI_Flash_Init" declared implicitly
+  	SPI_Flash_Init(); 
+main.c(26): warning:  #223-D: function "SPI_Flash_Read" declared implicitly
+  	SPI_Flash_Read(&data_h,0,1);  
+main.c(15): warning:  #177-D: variable "i" was declared but never referenced
+  	unsigned char i,k;
+main.c(15): warning:  #177-D: variable "k" was declared but never referenced
+  	unsigned char i,k;
+main.c(16): warning:  #177-D: variable "ret" was declared but never referenced
+  	unsigned char ret;
+main.c(17): warning:  #177-D: variable "buf" was declared but never referenced
+  	char buf[128];
+main.c(18): warning:  #177-D: variable "key" was declared but never referenced
+  	unsigned char key=0xff;
+main.c(20): warning:  #550-D: variable "data" was set but never used
+  	unsigned short data;
+main.c: 8 warnings, 0 errors
+linking...
+Program Size: Code=3792 RO-data=336 RW-data=68 ZI-data=1732  
+FromELF: creating hex file...
+"..\OBJ\LED.axf" - 0 Error(s), 8 Warning(s).
+
+<h2>Collection of Component include folders:</h2>
+  C:\Users\GD005\Desktop\demoÄ£°å\USER\RTE
+  C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>
