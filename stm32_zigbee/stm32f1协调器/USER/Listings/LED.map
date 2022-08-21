@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 Component: ARM Compiler 5.06 update 6 (build 750) Tool: armlink [4d35ed]
+=======
+Component: ARM Compiler 5.06 update 2 (build 183) Tool: armlink [4d35b7]
+>>>>>>> e8b95b0088448286ec768b82a60064d0bf377976
 
 ==============================================================================
 
@@ -1222,6 +1226,7 @@ Memory Map of the image
 
   Load Region LR_1 (Base: 0x08000000, Size: 0x00002af0, Max: 0xffffffff, ABSOLUTE)
 
+<<<<<<< HEAD
     Execution Region ER_RO (Exec base: 0x08000000, Load base: 0x08000000, Size: 0x00002ab4, Max: 0xffffffff, ABSOLUTE)
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
@@ -1384,6 +1389,170 @@ Memory Map of the image
     0x2000023c   0x08002af0   0x00000004   PAD
     0x20000240        -       0x00000200   Zero   RW          981    HEAP                startup_stm32f10x_hd.o
     0x20000440        -       0x00000400   Zero   RW          980    STACK               startup_stm32f10x_hd.o
+=======
+    Execution Region ER_RO (Base: 0x08000000, Size: 0x00002ab4, Max: 0xffffffff, ABSOLUTE)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x08000000   0x00000130   Data   RO          982    RESET               startup_stm32f10x_hd.o
+    0x08000130   0x00000008   Code   RO         1723  * !!!main             c_w.l(__main.o)
+    0x08000138   0x00000034   Code   RO         1961    !!!scatter          c_w.l(__scatter.o)
+    0x0800016c   0x0000001a   Code   RO         1963    !!handler_copy      c_w.l(__scatter_copy.o)
+    0x08000186   0x00000002   PAD
+    0x08000188   0x0000001c   Code   RO         1965    !!handler_zi        c_w.l(__scatter_zi.o)
+    0x080001a4   0x00000000   Code   RO         1718    .ARM.Collect$$_printf_percent$$00000000  c_w.l(_printf_percent.o)
+    0x080001a4   0x00000004   Code   RO         1784    .ARM.Collect$$_printf_percent$$00000017  c_w.l(_printf_percent_end.o)
+    0x080001a8   0x00000002   Code   RO         1838    .ARM.Collect$$libinit$$00000000  c_w.l(libinit.o)
+    0x080001aa   0x00000000   Code   RO         1842    .ARM.Collect$$libinit$$00000002  c_w.l(libinit2.o)
+    0x080001aa   0x00000000   Code   RO         1844    .ARM.Collect$$libinit$$00000004  c_w.l(libinit2.o)
+    0x080001aa   0x00000000   Code   RO         1847    .ARM.Collect$$libinit$$0000000A  c_w.l(libinit2.o)
+    0x080001aa   0x00000000   Code   RO         1849    .ARM.Collect$$libinit$$0000000C  c_w.l(libinit2.o)
+    0x080001aa   0x00000000   Code   RO         1851    .ARM.Collect$$libinit$$0000000E  c_w.l(libinit2.o)
+    0x080001aa   0x00000000   Code   RO         1854    .ARM.Collect$$libinit$$00000011  c_w.l(libinit2.o)
+    0x080001aa   0x00000000   Code   RO         1856    .ARM.Collect$$libinit$$00000013  c_w.l(libinit2.o)
+    0x080001aa   0x00000000   Code   RO         1858    .ARM.Collect$$libinit$$00000015  c_w.l(libinit2.o)
+    0x080001aa   0x00000000   Code   RO         1860    .ARM.Collect$$libinit$$00000017  c_w.l(libinit2.o)
+    0x080001aa   0x00000000   Code   RO         1862    .ARM.Collect$$libinit$$00000019  c_w.l(libinit2.o)
+    0x080001aa   0x00000000   Code   RO         1864    .ARM.Collect$$libinit$$0000001B  c_w.l(libinit2.o)
+    0x080001aa   0x00000000   Code   RO         1866    .ARM.Collect$$libinit$$0000001D  c_w.l(libinit2.o)
+    0x080001aa   0x00000000   Code   RO         1868    .ARM.Collect$$libinit$$0000001F  c_w.l(libinit2.o)
+    0x080001aa   0x00000000   Code   RO         1870    .ARM.Collect$$libinit$$00000021  c_w.l(libinit2.o)
+    0x080001aa   0x00000000   Code   RO         1872    .ARM.Collect$$libinit$$00000023  c_w.l(libinit2.o)
+    0x080001aa   0x00000000   Code   RO         1874    .ARM.Collect$$libinit$$00000025  c_w.l(libinit2.o)
+    0x080001aa   0x00000000   Code   RO         1878    .ARM.Collect$$libinit$$0000002C  c_w.l(libinit2.o)
+    0x080001aa   0x00000000   Code   RO         1880    .ARM.Collect$$libinit$$0000002E  c_w.l(libinit2.o)
+    0x080001aa   0x00000000   Code   RO         1882    .ARM.Collect$$libinit$$00000030  c_w.l(libinit2.o)
+    0x080001aa   0x00000000   Code   RO         1884    .ARM.Collect$$libinit$$00000032  c_w.l(libinit2.o)
+    0x080001aa   0x00000002   Code   RO         1885    .ARM.Collect$$libinit$$00000033  c_w.l(libinit2.o)
+    0x080001ac   0x00000002   Code   RO         1903    .ARM.Collect$$libshutdown$$00000000  c_w.l(libshutdown.o)
+    0x080001ae   0x00000000   Code   RO         1913    .ARM.Collect$$libshutdown$$00000002  c_w.l(libshutdown2.o)
+    0x080001ae   0x00000000   Code   RO         1915    .ARM.Collect$$libshutdown$$00000004  c_w.l(libshutdown2.o)
+    0x080001ae   0x00000000   Code   RO         1918    .ARM.Collect$$libshutdown$$00000007  c_w.l(libshutdown2.o)
+    0x080001ae   0x00000000   Code   RO         1921    .ARM.Collect$$libshutdown$$0000000A  c_w.l(libshutdown2.o)
+    0x080001ae   0x00000000   Code   RO         1923    .ARM.Collect$$libshutdown$$0000000C  c_w.l(libshutdown2.o)
+    0x080001ae   0x00000000   Code   RO         1926    .ARM.Collect$$libshutdown$$0000000F  c_w.l(libshutdown2.o)
+    0x080001ae   0x00000002   Code   RO         1927    .ARM.Collect$$libshutdown$$00000010  c_w.l(libshutdown2.o)
+    0x080001b0   0x00000000   Code   RO         1777    .ARM.Collect$$rtentry$$00000000  c_w.l(__rtentry.o)
+    0x080001b0   0x00000000   Code   RO         1799    .ARM.Collect$$rtentry$$00000002  c_w.l(__rtentry2.o)
+    0x080001b0   0x00000006   Code   RO         1811    .ARM.Collect$$rtentry$$00000004  c_w.l(__rtentry4.o)
+    0x080001b6   0x00000000   Code   RO         1801    .ARM.Collect$$rtentry$$00000009  c_w.l(__rtentry2.o)
+    0x080001b6   0x00000004   Code   RO         1802    .ARM.Collect$$rtentry$$0000000A  c_w.l(__rtentry2.o)
+    0x080001ba   0x00000000   Code   RO         1804    .ARM.Collect$$rtentry$$0000000C  c_w.l(__rtentry2.o)
+    0x080001ba   0x00000008   Code   RO         1805    .ARM.Collect$$rtentry$$0000000D  c_w.l(__rtentry2.o)
+    0x080001c2   0x00000002   Code   RO         1839    .ARM.Collect$$rtexit$$00000000  c_w.l(rtexit.o)
+    0x080001c4   0x00000000   Code   RO         1887    .ARM.Collect$$rtexit$$00000002  c_w.l(rtexit2.o)
+    0x080001c4   0x00000004   Code   RO         1888    .ARM.Collect$$rtexit$$00000003  c_w.l(rtexit2.o)
+    0x080001c8   0x00000006   Code   RO         1889    .ARM.Collect$$rtexit$$00000004  c_w.l(rtexit2.o)
+    0x080001ce   0x00000002   PAD
+    0x080001d0   0x00000040   Code   RO          983  * .text               startup_stm32f10x_hd.o
+    0x08000210   0x00000002   Code   RO         1687    .text               c_w.l(use_no_semi_2.o)
+    0x08000212   0x00000002   PAD
+    0x08000214   0x00000018   Code   RO         1691    .text               c_w.l(noretval__2printf.o)
+    0x0800022c   0x00000068   Code   RO         1693    .text               c_w.l(__printf.o)
+    0x08000294   0x0000003e   Code   RO         1719    .text               c_w.l(strlen.o)
+    0x080002d2   0x00000006   Code   RO         1721    .text               c_w.l(heapauxi.o)
+    0x080002d8   0x00000002   Code   RO         1775    .text               c_w.l(use_no_semi.o)
+    0x080002da   0x00000002   PAD
+    0x080002dc   0x00000024   Code   RO         1782    .text               c_w.l(_printf_char_file.o)
+    0x08000300   0x00000030   Code   RO         1818    .text               c_w.l(_printf_char_common.o)
+    0x08000330   0x00000008   Code   RO         1820    .text               c_w.l(ferror.o)
+    0x08000338   0x00000008   Code   RO         1824    .text               c_w.l(libspace.o)
+    0x08000340   0x0000004a   Code   RO         1827    .text               c_w.l(sys_stackheap_outer.o)
+    0x0800038a   0x00000012   Code   RO         1831    .text               c_w.l(exit.o)
+    0x0800039c   0x00000004   Code   RO          135    i.BusFault_Handler  stm32f10x_it.o
+    0x080003a0   0x00000002   Code   RO          136    i.DebugMon_Handler  stm32f10x_it.o
+    0x080003a2   0x00000002   PAD
+    0x080003a4   0x000000a0   Code   RO          393    i.DrawTestPage      test.o
+    0x08000444   0x00000116   Code   RO         1029    i.GPIO_Init         stm32f10x_gpio.o
+    0x0800055a   0x00000002   PAD
+    0x0800055c   0x00000108   Code   RO          260    i.GUI_DrawFont16    gui.o
+    0x08000664   0x00000118   Code   RO          261    i.GUI_DrawFont24    gui.o
+    0x0800077c   0x00000108   Code   RO          262    i.GUI_DrawFont32    gui.o
+    0x08000884   0x00000040   Code   RO          265    i.Gui_StrCenter     gui.o
+    0x080008c4   0x00000004   Code   RO          137    i.HardFault_Handler  stm32f10x_it.o
+    0x080008c8   0x00000060   Code   RO          589    i.LCD_Clear         lcd.o
+    0x08000928   0x0000001c   Code   RO          590    i.LCD_DrawPoint     lcd.o
+    0x08000944   0x00000074   Code   RO          269    i.LCD_Fill          gui.o
+    0x080009b8   0x0000002c   Code   RO          591    i.LCD_GPIOInit      lcd.o
+    0x080009e4   0x00000204   Code   RO          592    i.LCD_Init          lcd.o
+    0x08000be8   0x00000028   Code   RO          593    i.LCD_RESET         lcd.o
+    0x08000c10   0x00000014   Code   RO          594    i.LCD_SetCursor     lcd.o
+    0x08000c24   0x00000058   Code   RO          595    i.LCD_SetWindows    lcd.o
+    0x08000c7c   0x00000124   Code   RO          270    i.LCD_ShowChar      gui.o
+    0x08000da0   0x00000030   Code   RO          596    i.LCD_WR_DATA       lcd.o
+    0x08000dd0   0x0000002c   Code   RO          597    i.LCD_WR_REG        lcd.o
+    0x08000dfc   0x00000010   Code   RO          598    i.LCD_WriteRAM_Prepare  lcd.o
+    0x08000e0c   0x00000014   Code   RO          599    i.LCD_WriteReg      lcd.o
+    0x08000e20   0x0000008c   Code   RO          600    i.LCD_direction     lcd.o
+    0x08000eac   0x00000038   Code   RO          601    i.Lcd_WriteData_16Bit  lcd.o
+    0x08000ee4   0x00000004   Code   RO          138    i.MemManage_Handler  stm32f10x_it.o
+    0x08000ee8   0x00000002   Code   RO          139    i.NMI_Handler       stm32f10x_it.o
+    0x08000eea   0x00000002   PAD
+    0x08000eec   0x00000070   Code   RO          987    i.NVIC_Init         misc.o
+    0x08000f5c   0x00000014   Code   RO          988    i.NVIC_PriorityGroupConfig  misc.o
+    0x08000f70   0x00000002   Code   RO          140    i.PendSV_Handler    stm32f10x_it.o
+    0x08000f72   0x00000002   PAD
+    0x08000f74   0x00000020   Code   RO         1163    i.RCC_APB1PeriphClockCmd  stm32f10x_rcc.o
+    0x08000f94   0x00000020   Code   RO         1165    i.RCC_APB2PeriphClockCmd  stm32f10x_rcc.o
+    0x08000fb4   0x000000d4   Code   RO         1173    i.RCC_GetClocksFreq  stm32f10x_rcc.o
+    0x08001088   0x0000009c   Code   RO          781    i.SPI2_Init         spi.o
+    0x08001124   0x00000018   Code   RO         1546    i.SPI_Cmd           stm32f10x_spi.o
+    0x0800113c   0x0000003c   Code   RO         1559    i.SPI_Init          stm32f10x_spi.o
+    0x08001178   0x00000022   Code   RO          783    i.SPI_WriteByte     spi.o
+    0x0800119a   0x00000002   Code   RO          141    i.SVC_Handler       stm32f10x_it.o
+    0x0800119c   0x00000008   Code   RO          224    i.SetSysClock       system_stm32f10x.o
+    0x080011a4   0x000000e0   Code   RO          225    i.SetSysClockTo72   system_stm32f10x.o
+    0x08001284   0x0000010c   Code   RO          273    i.Show_Str          gui.o
+    0x08001390   0x00000028   Code   RO          991    i.SysTick_CLKSourceConfig  misc.o
+    0x080013b8   0x00000002   Code   RO          142    i.SysTick_Handler   stm32f10x_it.o
+    0x080013ba   0x00000002   PAD
+    0x080013bc   0x00000060   Code   RO          227    i.SystemInit        system_stm32f10x.o
+    0x0800141c   0x00000088   Code   RO          917    i.USART1_IRQHandler  usart.o
+    0x080014a4   0x00000088   Code   RO          918    i.USART2_IRQHandler  usart.o
+    0x0800152c   0x00000018   Code   RO         1365    i.USART_Cmd         stm32f10x_usart.o
+    0x08001544   0x00000054   Code   RO         1369    i.USART_GetITStatus  stm32f10x_usart.o
+    0x08001598   0x0000004a   Code   RO         1371    i.USART_ITConfig    stm32f10x_usart.o
+    0x080015e2   0x00000002   PAD
+    0x080015e4   0x000000d8   Code   RO         1372    i.USART_Init        stm32f10x_usart.o
+    0x080016bc   0x0000000a   Code   RO         1379    i.USART_ReceiveData  stm32f10x_usart.o
+    0x080016c6   0x00000004   Code   RO          143    i.UsageFault_Handler  stm32f10x_it.o
+    0x080016ca   0x00000004   Code   RO          919    i._sys_exit         usart.o
+    0x080016ce   0x00000002   PAD
+    0x080016d0   0x00000044   Code   RO          862    i.delay_init        delay.o
+    0x08001714   0x0000004c   Code   RO          863    i.delay_ms          delay.o
+    0x08001760   0x0000001c   Code   RO          920    i.fputc             usart.o
+    0x0800177c   0x000000c0   Code   RO            1    i.main              main.o
+    0x0800183c   0x000000a4   Code   RO          921    i.uart1_init        usart.o
+    0x080018e0   0x000000a0   Code   RO          922    i.uart2_init        usart.o
+    0x08001980   0x00001112   Data   RO          278    .constdata          gui.o
+    0x08002a92   0x00000002   PAD
+    0x08002a94   0x00000020   Data   RO         1959    Region$$Table       anon$$obj.o
+
+
+    Execution Region ER_RW (Base: 0x20000000, Size: 0x0000003c, Max: 0xffffffff, ABSOLUTE)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x20000000   0x00000014   Data   RW          228    .data               system_stm32f10x.o
+    0x20000014   0x00000006   Data   RW          603    .data               lcd.o
+    0x2000001a   0x00000004   Data   RW          865    .data               delay.o
+    0x2000001e   0x00000002   PAD
+    0x20000020   0x00000008   Data   RW          924    .data               usart.o
+    0x20000028   0x00000014   Data   RW         1193    .data               stm32f10x_rcc.o
+
+
+    Execution Region ER_ZI (Base: 0x2000003c, Size: 0x00000804, Max: 0xffffffff, ABSOLUTE)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x2000003c   0x0000000e   Zero   RW          602    .bss                lcd.o
+    0x2000004a   0x00000190   Zero   RW          923    .bss                usart.o
+    0x200001da   0x00000002   PAD
+    0x200001dc   0x00000060   Zero   RW         1825    .bss                c_w.l(libspace.o)
+    0x2000023c   0x00000004   PAD
+    0x20000240   0x00000200   Zero   RW          981    HEAP                startup_stm32f10x_hd.o
+    0x20000440   0x00000400   Zero   RW          980    STACK               startup_stm32f10x_hd.o
+>>>>>>> e8b95b0088448286ec768b82a60064d0bf377976
 
 
 ==============================================================================
@@ -1393,6 +1562,7 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
 
+<<<<<<< HEAD
        144         22          0          4          0       1208   delay.o
       1548         66       4370          0          0       7526   gui.o
       1156         68          0          6         14       8853   lcd.o
@@ -1412,6 +1582,27 @@ Image component sizes
 
     ----------------------------------------------------------------------
       5668        412       4708         60       1952     287798   Object Totals
+=======
+       144         22          0          4          0       1160   delay.o
+      1548         66       4370          0          0       7366   gui.o
+      1156         68          0          6         14       8613   lcd.o
+       192         42          0          0          0     239855   main.o
+       172         22          0          0          0       2001   misc.o
+       190          8          0          0          0       1412   spi.o
+        64         26        304          0       1536        788   startup_stm32f10x_hd.o
+       278          0          0          0          0       1936   stm32f10x_gpio.o
+        26          0          0          0          0       3578   stm32f10x_it.o
+       276         32          0         20          0       4370   stm32f10x_rcc.o
+        84          0          0          0          0       2085   stm32f10x_spi.o
+       408          6          0          0          0       4910   stm32f10x_usart.o
+         0          0          0          0          0         32   sys.o
+       328         28          0         20          0       2017   system_stm32f10x.o
+       160         42          0          0          0        999   test.o
+       628         50          0          8        400       5348   usart.o
+
+    ----------------------------------------------------------------------
+      5668        412       4708         60       1952     286470   Object Totals
+>>>>>>> e8b95b0088448286ec768b82a60064d0bf377976
          0          0         32          0          0          0   (incl. Generated)
         14          0          2          2          2          0   (incl. Padding)
 
@@ -1467,8 +1658,13 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
+<<<<<<< HEAD
       6224        438       4708         60       2052     285642   Grand Totals
       6224        438       4708         60       2052     285642   ELF Image Totals
+=======
+      6224        438       4708         60       2052     284314   Grand Totals
+      6224        438       4708         60       2052     284314   ELF Image Totals
+>>>>>>> e8b95b0088448286ec768b82a60064d0bf377976
       6224        438       4708         60          0          0   ROM Totals
 
 ==============================================================================

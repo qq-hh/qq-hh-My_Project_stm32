@@ -15,8 +15,13 @@ int main(void)
 	u8  a;
 	SystemInit();//初始化RCC 设置系统主频为72MHZ
 	NVIC_PriorityGroupConfig(NVIC_PriorityGroup_2);
+<<<<<<< HEAD
   uart1_init(9600);
 	uart2_init(9600);
+=======
+  uart1_init(38400);
+	uart2_init(38400);
+>>>>>>> e8b95b0088448286ec768b82a60064d0bf377976
 	delay_init();
 	LCD_Init();	   //液晶屏初始化
   DrawTestPage("");
