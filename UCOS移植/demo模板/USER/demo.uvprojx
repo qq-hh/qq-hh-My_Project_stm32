@@ -324,7 +324,7 @@
             <wLevel>0</wLevel>
             <uThumb>0</uThumb>
             <uSurpInc>0</uSurpInc>
-            <uC99>0</uC99>
+            <uC99>1</uC99>
             <uGnu>0</uGnu>
             <useXO>0</useXO>
             <v6Lang>1</v6Lang>
@@ -538,14 +538,14 @@
               <FilePath>..\UCOSII\PORT\os_cpu_c.c</FilePath>
             </File>
             <File>
-              <FileName>os_dbg.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\UCOSII\PORT\os_dbg.c</FilePath>
+              <FileName>os_cpu.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\UCOSII\PORT\os_cpu.h</FilePath>
             </File>
             <File>
-              <FileName>os_dbg_r.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\UCOSII\PORT\os_dbg_r.c</FilePath>
+              <FileName>os_cpu_a.asm</FileName>
+              <FileType>2</FileType>
+              <FilePath>..\UCOSII\PORT\os_cpu_a.asm</FilePath>
             </File>
           </Files>
         </Group>

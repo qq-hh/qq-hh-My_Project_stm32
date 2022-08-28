@@ -211,7 +211,7 @@ extern "C" {
 #endif
 
 #ifndef INCLUDE_xTaskGetSchedulerState
-	#define INCLUDE_xTaskGetSchedulerState 0
+	#define INCLUDE_xTaskGetSchedulerState 1
 #endif
 
 #ifndef INCLUDE_xTaskGetCurrentTaskHandle

@@ -32,7 +32,6 @@ void led0_task(void *pvParameters);
 TaskHandle_t LED1Task_Handler;
 //任务函数
 void led1_task(void *pvParameters);
-
 int main(void)
 {
 	NVIC_PriorityGroupConfig(NVIC_PriorityGroup_4);//设置系统中断优先级分组4	 

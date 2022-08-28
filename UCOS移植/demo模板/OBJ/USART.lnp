@@ -24,8 +24,7 @@
 "..\obj\os_time.o"
 "..\obj\os_tmr.o"
 "..\obj\os_cpu_c.o"
-"..\obj\os_dbg.o"
-"..\obj\os_dbg_r.o"
+"..\obj\os_cpu_a.o"
 --strict --scatter "..\OBJ\USART.sct"
 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers

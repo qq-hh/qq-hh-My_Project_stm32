@@ -3,15 +3,7 @@
 #include "sys.h"
 #include "usart.h"
 #include "includes.h"
-/************************************************
- ALIENTEK 精英版STM32开发板UCOS实验 
- UCOSII移植
- 技术支持：www.openedv.com
- 淘宝店铺：http://eboard.taobao.com 
- 关注微信公众平台微信号："正点原子"，免费获取STM32资料。
- 广州市星翼电子科技有限公司  
- 作者：正点原子 @ALIENTEK
-************************************************/
+
 
 //START 任务
 //设置任务优先级
