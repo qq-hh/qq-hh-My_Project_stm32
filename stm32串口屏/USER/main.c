@@ -48,7 +48,7 @@ int main(void)
 		delay_ms(10); 
 		break;
 		case  KEY0_PRES:
-    UartSend("SET_BTN(3,0);SET_POINT(2,150);SET_PROG(1,100);\r\n");
+        UartSend("SET_BTN(3,0);SET_POINT(2,150);SET_PROG(1,100);\r\n");
 		CheckBusy();
 		LED0=!LED0;
 		delay_ms(100);

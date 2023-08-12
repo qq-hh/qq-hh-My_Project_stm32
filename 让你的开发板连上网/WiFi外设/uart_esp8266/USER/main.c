@@ -28,17 +28,6 @@
 			}
 			printf("\r\n\r\n");//插入换行
 			USART_RX_STA=0;
-		}else
-		{
-			times++;
-			if(times%5000==0)
-			{
-				printf("\r\n精英STM32开发板 串口实验\r\n");
-				printf("正点原子@ALIENTEK\r\n\r\n");
-			}
-			if(times%200==0)printf("请输入数据,以回车键结束\n");  
-			if(times%30==0)LED0=!LED0;//闪烁LED,提示系统正在运行.
-			delay_ms(10);   
 		}
 	}	 
  }

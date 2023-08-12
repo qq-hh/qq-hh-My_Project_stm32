@@ -14,6 +14,6 @@
 "..\obj\stm32f10x_rcc.o"
 "..\obj\stm32f10x_usart.o"
 --strict --scatter "..\OBJ\USART.sct"
---summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers
 --list ".\USART.map" -o ..\OBJ\USART.axf

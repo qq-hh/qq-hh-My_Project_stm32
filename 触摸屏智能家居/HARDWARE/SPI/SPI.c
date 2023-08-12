@@ -70,6 +70,7 @@ u8 SPI_WriteByte(SPI_TypeDef* SPIx,u8 Byte)
 	return SPIx->DR;          	     //返回收到的数据			
 } 
 
+
 /*****************************************************************************
  * @name       :void SPI_SetSpeed(SPI_TypeDef* SPIx,u8 SpeedSet)
  * @date       :2018-08-09 
@@ -92,6 +93,7 @@ void SPI_SetSpeed(SPI_TypeDef* SPIx,u8 SpeedSet)
 	}
 	SPIx->CR1|=1<<6; //SPI设备使能
 } 
+
 
 /*****************************************************************************
  * @name       :void SPI2_Init(void)	
