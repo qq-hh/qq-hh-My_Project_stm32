@@ -22,7 +22,7 @@
 	while(1)
 	{
 
-	key=KEY_Scan(0);	//得到键值
+	   key=KEY_Scan(0);	//得到键值
 	   	if(key)
 		{						   
 			switch(key)
@@ -34,7 +34,7 @@
 				JDQ2=!JDQ2;
 				 break; 
 				case KEY0_PRES:	//同时控制LED0,LED1翻转 
-		     JDQ3=!JDQ3;
+		          JDQ3=!JDQ3;
 					break;
 				case KEY2_PRES:	//控制LED1翻转	
 					JDQ4=!JDQ4;

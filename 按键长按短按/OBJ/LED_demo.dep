@@ -1,5 +1,5 @@
 Dependencies for Project 'LED', Target 'demo': (DO NOT MODIFY !)
-F (.\main.c)(0x64D6E2A5)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\CORE -I ..\STM32F10x_FWLib\inc -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\HARDWARE\24CXX -I ..\HARDWARE\IIC -I ..\HARDWARE\KEY -I ..\HARDWARE\LCD -I ..\HARDWARE\LED -I ..\HARDWARE\SPI -I ..\HARDWARE\TOUCH -I ..\USER -I ..\HARDWARE\RGB-I.\RTE\_demo-IC:\Users\qiu\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o ..\obj\main.o --omf_browse ..\obj\main.crf --depend ..\obj\main.d)
+F (.\main.c)(0x64F3EBAA)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\CORE -I ..\STM32F10x_FWLib\inc -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\HARDWARE\24CXX -I ..\HARDWARE\IIC -I ..\HARDWARE\KEY -I ..\HARDWARE\LCD -I ..\HARDWARE\LED -I ..\HARDWARE\SPI -I ..\HARDWARE\TOUCH -I ..\USER -I ..\HARDWARE\RGB-I.\RTE\_demo-IC:\Users\qiu\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o ..\obj\main.o --omf_browse ..\obj\main.crf --depend ..\obj\main.d)
 I (..\SYSTEM\delay\delay.h)(0x555AC82A)
 I (..\SYSTEM\sys\sys.h)(0x550F951A)
 I (..\USER\stm32f10x.h)(0x4D783CB5)
@@ -37,6 +37,7 @@ I (gui.h)(0x5B6E3AEE)
 I (test.h)(0x62CBE234)
 I (..\SYSTEM\usart\usart.h)(0x50517A83)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5CEB79E2)
+I (..\HARDWARE\KEY\key.h)(0x64E16BC4)
 F (.\stm32f10x_it.c)(0x4EBEACB0)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\CORE -I ..\STM32F10x_FWLib\inc -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\HARDWARE\24CXX -I ..\HARDWARE\IIC -I ..\HARDWARE\KEY -I ..\HARDWARE\LCD -I ..\HARDWARE\LED -I ..\HARDWARE\SPI -I ..\HARDWARE\TOUCH -I ..\USER -I ..\HARDWARE\RGB-I.\RTE\_demo-IC:\Users\qiu\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o ..\obj\stm32f10x_it.o --omf_browse ..\obj\stm32f10x_it.crf --depend ..\obj\stm32f10x_it.d)
 I (stm32f10x_it.h)(0x4D99A427)
 I (stm32f10x.h)(0x4D783CB5)
@@ -170,7 +171,7 @@ I (..\SYSTEM\delay\delay.h)(0x555AC82A)
 I (gui.h)(0x5B6E3AEE)
 I (test.h)(0x62CBE234)
 I (..\HARDWARE\TOUCH\touch.h)(0x5B6E3ABC)
-I (..\HARDWARE\KEY\key.h)(0x5B6E8687)
+I (..\HARDWARE\KEY\key.h)(0x64E16BC4)
 I (..\HARDWARE\LED\led.h)(0x62CBEC46)
 I (pic.h)(0x62E0E929)
 I (..\SYSTEM\usart\usart.h)(0x50517A83)
@@ -272,8 +273,8 @@ I (..\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x504F415F)
 I (..\STM32F10x_FWLib\inc\stm32f10x_wwdg.h)(0x4D783BB4)
 I (..\STM32F10x_FWLib\inc\misc.h)(0x4D783BB4)
 I (..\SYSTEM\delay\delay.h)(0x555AC82A)
-F (..\HARDWARE\KEY\key.c)(0x5B6E8680)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\CORE -I ..\STM32F10x_FWLib\inc -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\HARDWARE\24CXX -I ..\HARDWARE\IIC -I ..\HARDWARE\KEY -I ..\HARDWARE\LCD -I ..\HARDWARE\LED -I ..\HARDWARE\SPI -I ..\HARDWARE\TOUCH -I ..\USER -I ..\HARDWARE\RGB-I.\RTE\_demo-IC:\Users\qiu\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o ..\obj\key.o --omf_browse ..\obj\key.crf --depend ..\obj\key.d)
-I (..\HARDWARE\KEY\key.h)(0x5B6E8687)
+F (..\HARDWARE\KEY\key.c)(0x64E16AC2)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\CORE -I ..\STM32F10x_FWLib\inc -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\HARDWARE\24CXX -I ..\HARDWARE\IIC -I ..\HARDWARE\KEY -I ..\HARDWARE\LCD -I ..\HARDWARE\LED -I ..\HARDWARE\SPI -I ..\HARDWARE\TOUCH -I ..\USER -I ..\HARDWARE\RGB-I.\RTE\_demo-IC:\Users\qiu\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o ..\obj\key.o --omf_browse ..\obj\key.crf --depend ..\obj\key.d)
+I (..\HARDWARE\KEY\key.h)(0x64E16BC4)
 I (..\SYSTEM\sys\sys.h)(0x550F951A)
 I (..\USER\stm32f10x.h)(0x4D783CB5)
 I (..\CORE\core_cm3.h)(0x4D523B58)

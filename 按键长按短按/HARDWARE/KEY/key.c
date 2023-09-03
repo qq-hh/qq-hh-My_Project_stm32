@@ -89,14 +89,79 @@ void KEY_Init(void)
 								2-The KEY1 button is pressed
 								3-The WK_UP button is pressed
 ******************************************************************************/ 
-u8 KEY_Scan(void)
-{	 	  
-	if((KEY0==0||KEY1==0||WK_UP==1))
-	{
-		delay_ms(10);//去抖动 
-		if(KEY0==0)return KEY0_PRES;
-		else if(KEY1==0)return KEY1_PRES;
-		else if(WK_UP==1)return WKUP_PRES; 
-	}	     
-	return 0;// 无按键按下
+//u8 KEY_Scan(void)
+//{	 	  
+//	if((KEY0==0||KEY1==0||WK_UP==1))
+//	{
+//		delay_ms(10);//去抖动 
+//		if(KEY0==0)return KEY0_PRES;
+//		else if(KEY1==0)return KEY1_PRES;
+//		else if(WK_UP==1)return WKUP_PRES; 
+//	}	     
+//	return 0;// 无按键按下
+//}
+
+
+u8 KeyState=0;
+u8   g_KeyActionFlag;
+void Key_Scan(void)
+{
+    static u8 TimeCnt = 0;
+    static u8 lock = 0;
+    switch (KeyState)
+    {
+        //按键未按下状态，此时判断Key的值
+        case   KEY_CHECK:    
+           if(!KEY1)   
+            {
+                KeyState =  KEY_COMFIRM;  //如果按键Key值为0，说明按键开始按下，进入下一个状态 
+            }
+            TimeCnt = 0;                  //计数复位
+            lock = 0;
+            break;
+            
+        case   KEY_COMFIRM:
+            if(!KEY1)                     //查看当前Key是否还是0，再次确认是否按下
+            {
+                if(!lock)   lock = 1;
+               
+                TimeCnt++;  
+                
+                /*按键时长判断*/
+                if(TimeCnt > 100)            // 长按 1 s
+                {
+                    g_KeyActionFlag = LONG_KEY;
+                    TimeCnt = 0;  
+                    lock = 0;               //重新检查
+                    KeyState =  KEY_RELEASE;    // 需要进入按键释放状态
+                }                
+                               
+            }   
+            else                       
+            {
+                if(1==lock)                // 不是第一次进入，  释放按键才执行
+                {
+
+                    g_KeyActionFlag = SHORT_KEY;          // 短按
+                    KeyState =  KEY_RELEASE;    // 需要进入按键释放状态 
+                }
+                
+                else                          // 当前Key值为1，确认为抖动，则返回上一个状态
+                {
+                    KeyState =  KEY_CHECK;    // 返回上一个状态
+                }
+       
+            } 
+            break;
+            
+         case  KEY_RELEASE:
+             if(KEY1)                     //当前Key值为1，说明按键已经释放，返回开始状态
+             { 
+                 KeyState =  KEY_CHECK;    
+             }
+             break;
+             
+         default: break;
+    }    
 }
+

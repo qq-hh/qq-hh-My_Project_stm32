@@ -65,6 +65,22 @@
 #define KEY1_PRES	2		//KEY1 
 #define WKUP_PRES	3		//WK_UP  
 
+
+
+
+
+#define KEY_CHECK  0
+#define KEY_COMFIRM  1
+#define KEY_RELEASE  2
+#define KEY_RELEASE  3
+#define KEY_RELEASE  4
+
+#define LONG_KEY 2
+#define SHORT_KEY 3
+
+
 void KEY_Init(void);//IO初始化
-u8 KEY_Scan(void);  	//按键扫描函数					    
+u8 KEY_Scan(void);  	//按键扫描函数	
+void Key_Scan(void);
+
 #endif

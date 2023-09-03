@@ -21,17 +21,22 @@ Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.6.0
 Dialog DLL:      TARMSTM.DLL V1.66.0.0
  
 <h2>Project:</h2>
-D:\github开源\My_Project_stm32\触摸屏\USER\LED.uvprojx
+D:\github开源\My_Project_stm32\按键长按短按\USER\LED.uvprojx
 Project File Date:  04/17/2023
 
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 6 (build 750)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
 Build target 'demo'
 compiling main.c...
+..\HARDWARE\KEY\key.h(75): warning:  #47-D: incompatible redefinition of macro "KEY_RELEASE"  (declared at line 74)
+  #define KEY_RELEASE  3
+..\HARDWARE\KEY\key.h(76): warning:  #47-D: incompatible redefinition of macro "KEY_RELEASE"  (declared at line 75)
+  #define KEY_RELEASE  4
+main.c: 2 warnings, 0 errors
 linking...
-Program Size: Code=3816 RO-data=9936 RW-data=52 ZI-data=1852  
+Program Size: Code=4168 RO-data=336 RW-data=56 ZI-data=1848  
 FromELF: creating hex file...
-"..\OBJ\LED.axf" - 0 Error(s), 0 Warning(s).
+"..\OBJ\LED.axf" - 0 Error(s), 2 Warning(s).
 
 <h2>Software Packages used:</h2>
 
